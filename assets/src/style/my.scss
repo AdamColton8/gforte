@@ -240,15 +240,45 @@ body {
     left: -60px;
     top: 12px;
   }
+  .section-one .wrap-header-text {
+    justify-content: flex-end;
+  }
 }
-
+@media (min-width: 641px) and (max-width: 1126px){
+  .section-one .header-text h1 {
+    font-size: 50px!important;
+    line-height: 35px!important;
+  }
+}
+@media (min-width: 640px) and (max-width: 772px){
+  .section-one .wrap-header-text {
+    justify-content: flex-start!important;
+  }
+}
+@media (min-width: 641px) and (max-width: 991.98px){
+  .section-one .header-text h1 {
+    font-size: 30px!important;
+    line-height: 20px!important;
+  }
+  .section-one .header-text h4 {
+    font-size: 12px!important;
+    line-height: 20px!important;
+  }
+  .section-one .wrap-header-text {
+    margin-right: 0!important;
+  }
+  .img-product-wrap{
+    position: initial!important;
+  }
+}
 @media (min-width: 1171px) and (max-width: 1725px){
   .section-one .header-text{
     h1{
-      font-size: 94px
+      font-size: 80px!important;
+      line-height: 80px;
     }
     h4{
-      font-size: 18px;
+      font-size: 18px!important;
     }
   }
 }
@@ -272,6 +302,7 @@ body {
   .section-one {
     .wrap-header-text{
       margin-right: 160px;
+      justify-content: flex-end;
     }
     .header-text {
       h1 {
@@ -424,6 +455,7 @@ body {
       }
     }
     .wrap-header-text {
+      justify-content: flex-end!important;
       margin-bottom: 0;
       margin-right: 0;
     }
@@ -602,7 +634,7 @@ body {
   }
 }
 
-@media (max-width: 599.98px) {
+@media (max-width: 639.98px) {
   .section-one{
     .header-text h1{
       font-size: 24px;
@@ -612,7 +644,7 @@ body {
       margin-right: 0px;
     }
     button.call-me{
-      margin-left: 0;
+      margin: 0 auto;
     }
     .plus-health{
       span{
@@ -635,9 +667,6 @@ body {
     }
   }
   .section-four {
-    .wrap-wom-img {
-      display: none;
-    }
     .wrap-mode-item {
       margin-left: 0;
     }
@@ -652,3 +681,13 @@ body {
   }
 }
 
+@media (max-width: 575.98px) {
+  .section-one .img-product {
+    max-width: 189px;
+  }
+  .section-four{
+    .wrap-wom-img {
+      display: none;
+    }
+  }
+}
